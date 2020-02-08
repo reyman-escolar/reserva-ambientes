@@ -2,5 +2,15 @@
     // "start": "nodemon ./index.js" se le cambia por node para heroku
 
     Para subir a heroku
-    en mi carpeta git init
-    git add.
+    en mi carpeta 
+    git init
+    git add .
+    git commit -am "Comentario"
+    git remote add origin https://github.com/reyman-escolar/reserva-ambientes.git ver esto en github es diferente para cada uno
+    git push -u origin master
+
+    actualizar
+    git add .
+    git status
+    git commit -am "Modifique la conexion a la base de datos, ahora en remoto "
+    git push

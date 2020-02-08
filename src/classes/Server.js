@@ -8,10 +8,13 @@ const { usuario_router } = require('./../routes/Usuario');
 
 // const Pabellon = require('./../models/Pabellon')
 
+// Esto para el puerto y subirlo a heorku
+// process.env.PORT ||
+
 class Server {
     constructor() {
         this.app = express();
-        this.puerto = 5000;
+        this.puerto = process.env.PORT || 5000;
         this.habilitarCORS();
         this.configurarBodyParser();
         this.cargarRutas();
