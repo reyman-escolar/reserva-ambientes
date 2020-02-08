@@ -34,6 +34,9 @@ class Server {
     }
     cargarRutas() {
         // Asignando todas las rutas de pabellon_router al servidor
+        this.app.get('/',(req,res)=>{
+            res.status(200).send("La API funciona 😆😆");
+        })
         this.app.use('/', pabellon_router, ambiente_router, reserva_router, usuario_router);
     }
 
