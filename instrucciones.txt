@@ -14,3 +14,11 @@
     git status
     git commit -am "Modifique la conexion a la base de datos, ahora en remoto "
     git push
+
+
+    //////////////////////////
+    Swagger
+    
+    npm i swagger-ui-express
+    
+    documentador local 
