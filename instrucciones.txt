@@ -1,0 +1,6 @@
+    En el package.json en el start
+    // "start": "nodemon ./index.js" se le cambia por node para heroku
+
+    Para subir a heroku
+    en mi carpeta git init
+    git add.
