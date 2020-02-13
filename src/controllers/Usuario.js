@@ -47,7 +47,7 @@ const Login = (req, res) => {
                 })
             } else {
                 res.status(404).json({
-                    ok: true,
+                    ok: false,
                     mensaje: 'usuario o contraseña incorrectos'
                 })
             }
