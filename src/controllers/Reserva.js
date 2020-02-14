@@ -87,7 +87,10 @@ const getReservaByFecha = (req, res) => {
     let { fechin, fechfin } = req.params;
     Reserva.findAll({
         include: [{
-            model: Ambiente
+            model: Ambiente,
+            include: [{
+                model: Pabellon
+            }]
         }],
         where: {
             [Op.or]: [{
