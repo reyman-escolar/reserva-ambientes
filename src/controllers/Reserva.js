@@ -97,7 +97,7 @@ const getReservaByFecha = (req, res) => {
             }]
         }
     }).then(reservas => {
-        if (reservas) {
+        if (reservas.length != 0) {
             res.status(200).json({
                 ok: true,
                 mensaje: 'Ya hay una reserva en esas fechas',
