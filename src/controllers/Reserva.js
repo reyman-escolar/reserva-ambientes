@@ -123,12 +123,12 @@ const getReserva = (req, res) => {
             include: [{
                 model: Ambiente
             }]
-
         })
     })
 }
 module.exports = {
     postReserva,
     validarReserva,
-    getReservaByFecha
+    getReservaByFecha,
+    getReserva
 }
