@@ -116,13 +116,17 @@ const getReservaByFecha = (req, res) => {
     })
 }
 const getReserva = (req, res) => {
-    Reserva.findAll().then(reservas => {
+    Reserva.findAll({
+        include: [{
+            model: Ambiente,
+            include:[{
+                model: Pabellon
+            }]
+        }]
+    }).then(reservas => {
         res.status(200).json({
             ok: true,
             contenido: reservas,
-            include: [{
-                model: Ambiente
-            }]
         })
     })
 }
