@@ -117,7 +117,7 @@ const getReservaByFecha = (req, res) => {
 }
 const getReserva = (req, res) => {
     Reserva.findAll().then(reservas => {
-        res, status(200).json({
+        res.status(200).json({
             ok: true,
             contenido: reservas,
             include: [{
