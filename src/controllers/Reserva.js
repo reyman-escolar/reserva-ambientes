@@ -119,8 +119,10 @@ const getReserva = (req, res) => {
     Reserva.findAll({
         include: [{
             model: Ambiente,
+            attributes:['amb_nro'],
             include:[{
-                model: Pabellon
+                model: Pabellon,
+                attributes:['pab_nom'],
             }]
         }]
     }).then(reservas => {
